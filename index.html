@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Juhoo</title>
+  </head>
+  <body>
+      <div id="wrapper">
+        <nav class="navbar">
+            <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+            <label for="menu-checkbox" class="menu-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <div class="logo">
+              <img src="./juhuu_logo.svg" alt="Logo" />
+            </div>
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">App</a></li>
+              <li><a href="#">Produkte</a></li>
+              <li><a href="#">Partner</a></li>
+              <li><a href="#">Uber-uns</a></li>
+            </ul>
+            <a class="get-in-touch" href="#">Get in touch</a>
+          </nav>
+    <div class="main">
+    
+    <div class="container">
+        
+      
+      <h1 class="heading1">
+        Die All-In-One IoT <br />
+        App Platform
+      </h1>
+      <div class="firstpir">
+      <p class="para1">
+        Finde, buche und steuere Sharing-Fahrräder, E-Scooter,
+        Abstellmöglichkeiten und vieles mehr. Einfach die JUHUU App
+        herunterladen und los geht's!
+      </p>
+    </div class="part1right">
+      <img src="./mobile 1.png" alt="" class="mobile1" />
+      <img src="./mobile 2.png" alt="" class="mobile2" />
+      <a class="get-in-touch2" href="#">Get in touch</a>
+      <img src="./download app now.png" alt="" class="download-app" />
+    </div>
+</div>
+
+    <section class="container2">
+      <div class="heading2">
+        <h1>Eine App für alle IoT Anwendungen</h1>
+        <img src="./mobile3.png" alt="" class="mobile3" />
+        <div class="sec1">
+          <img src="./apps.png" alt="" class="apps" />
+          <h1>All-in-One</h1>
+          <p>
+            Du kannst alle integrierten Dienste mit deinem Account mieten,
+            nutzen und steuern.
+          </p>
+        </div>
+        <div class="sec2">
+          <img src="./using mobile.png" alt="" class="usingmobile" />
+          <h1>All-in-One</h1>
+          <p>
+            Du kannst alle integrierten Dienste mit deinem Account mieten,
+            nutzen und steuern.
+          </p>
+        </div>
+        <div class="sec3">
+          <img src="./credit cards.png" alt="" class="creditcards" />
+          <h1>All-in-One</h1>
+          <p>
+            Du kannst alle integrierten Dienste mit deinem Account mieten,
+            nutzen und steuern.
+          </p>
+        </div>
+        <div class="sec4">
+          <img src="./Laptop.png" alt="" class="Laptop" />
+          <h1>All-in-One</h1>
+          <p>
+            Du kannst alle integrierten Dienste mit deinem Account mieten,
+            nutzen und steuern.
+          </p>
+        </div>
+        <div class="sec5">
+          <img src="./database logo.png" alt="" class="database" />
+          <h1>All-in-One</h1>
+          <p>
+            Du kannst alle integrierten Dienste mit deinem Account mieten,
+            nutzen und steuern.
+          </p>
+        </div>
+        <div class="sec6">
+          <img src="./Tax.png" alt="" class="Tax" />
+          <h1>All-in-One</h1>
+          <p>
+            Du kannst alle integrierten Dienste mit deinem Account mieten,
+            nutzen und steuern.
+          </p>
+        </div>
+      </div>
+    </section>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('.navbar').outerHeight();
+
+        $(window).scroll(function() {
+            var scrollTop = $(this).scrollTop();
+
+            if (Math.abs(lastScrollTop - scrollTop) <= delta)
+                return;
+
+            if (scrollTop > lastScrollTop && scrollTop > navbarHeight) {
+                // Scroll down
+                $('.navbar').addClass('navbar-hide');
+            } else {
+                // Scroll up
+                if (scrollTop + $(window).height() < $(document).height()) {
+                    $('.navbar').removeClass('navbar-hide');
+                }
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    });
+</script>
+  </body>
+</html>
