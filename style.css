@@ -4,8 +4,8 @@ body {
   font-family: Arial, sans-serif;
 
   /* background-size: cover; */
-  height: 100vh;
-  width: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 #wrapper {
@@ -261,6 +261,8 @@ body {
     width: 30%;
   }
   .main {
+    margin-top: -15px;
+    padding-top: 35px;
     margin: 0;
     padding-bottom: 20px;
     height: 400px;
