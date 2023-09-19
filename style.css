@@ -261,8 +261,7 @@ body {
     width: 30%;
   }
   .main {
-    margin-top: -15px;
-    padding-top: 35px;
+    margin: 0;
     padding-bottom: 20px;
     height: 400px;
     
