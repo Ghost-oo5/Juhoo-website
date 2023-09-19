@@ -265,7 +265,7 @@ body {
     padding-top: 35px;
     margin: 0;
     padding-bottom: 20px;
-    height: 400px;
+    height: 100%;
     
     font-family: Arial, sans-serif;
     background: linear-gradient(0deg, rgb(241, 126, 220), rgb(104, 232, 241));
